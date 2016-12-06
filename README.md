@@ -2,7 +2,7 @@
 This is a Docker image for CloudFlare's CFSSL including all CFSSL utilities provided by CloudFlare.
 
 ##Usage:
-`docker run -it --rm -v $(pwd):/cfssl lindeboomio/cfssl <command>`
+`docker run -i --rm -v $(pwd):/cfssl lindeboomio/cfssl <command>`
 
 ###Commands
 The included commands are:
@@ -19,6 +19,7 @@ The included commands are:
 For each utility, a wrapper script is included with the proper `docker run` command.
 
 To dump these wrapper scripts to the current directory, run the following command:
+
 `docker run -i --rm -v $(pwd):/cfssl lindeboomio/cfssl dump-wrappers`
 
 ##To do
