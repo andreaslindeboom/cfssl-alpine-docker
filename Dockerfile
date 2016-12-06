@@ -7,7 +7,7 @@ WORKDIR /cfssl
 ADD scripts/wrappers /wrappers
 ADD scripts/dump-wrappers /usr/local/bin
 
-RUN apk add --no-cache git build-base && \
+RUN apk add --update git build-base && \
     go get -u -tags nopkcs11 github.com/cloudflare/cfssl/cmd/... && \
     apk del git build-base && \
     rm -rf /var/cache/apk/* && \
