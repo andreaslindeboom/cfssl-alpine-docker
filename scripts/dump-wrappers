@@ -1,0 +1,3 @@
+#!/bin/sh
+cp -r /wrappers /cfssl
+echo "Wrappers written. To use them, copy them somewhere in your path, e.g. /usr/local/bin"
