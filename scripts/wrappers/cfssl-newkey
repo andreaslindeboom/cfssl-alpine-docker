@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run -i --rm -v $(pwd):/cfssl lindeboomio/cfssl cfssl-newkey "$@"
+docker run -i --rm -v $(pwd):/cfssl lindeboomio/cfssl-alpine cfssl-newkey "$@"

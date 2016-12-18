@@ -1,2 +1,2 @@
 #!/bin/bash
-docker run -i --rm -v $(pwd):/cfssl lindeboomio/cfssl cfssl-bundle "$@"
+docker run -i --rm -v $(pwd):/cfssl lindeboomio/cfssl-alpine cfssl-bundle "$@"
