@@ -13,4 +13,4 @@ RUN apk add --update git build-base && \
     rm -rf /var/cache/apk/* && \
     chmod +x /usr/local/bin/dump-wrappers
 
-ENTRYPOINT [ "" ]
+ENTRYPOINT [ ]
