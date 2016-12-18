@@ -33,7 +33,7 @@ With the wrapper scripts in your path, the CFSSL commands should be usable as us
 Note: the wrapper scripts runs `cfssl` and `multirootca` with host networking enabled, to allow for running the servers on custom ports.
 
 ## Examples
-To get going with CFSSL, there is an article over at ![the CloudFlare blog](https://blog.cloudflare.com/how-to-build-your-own-public-key-infrastructure/) with examples that have been demonstrated to work, with one addition: to enable a CFSSL server to sign certificates, a `sign cert` usage needs to be added to the CA policy file (`config_ca.json`):
+To get going with CFSSL, there is an article over at [the CloudFlare blog](https://blog.cloudflare.com/how-to-build-your-own-public-key-infrastructure/) with examples that have been demonstrated to work, with one addition: to enable a CFSSL server to sign certificates, a `sign cert` usage needs to be added to the CA policy file (`config_ca.json`):
 
 ```
 [..]
