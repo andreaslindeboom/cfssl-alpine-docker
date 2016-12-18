@@ -1,6 +1,2 @@
 #!/bin/bash
-if [[ $1 == "serve" ]]; then
-    docker run -i --rm -p 8888:8888 -v $(pwd):/cfssl lindeboomio/cfssl cfssl "$@"
-else
-    docker run -i --rm --net=host -v $(pwd):/cfssl lindeboomio/cfssl cfssl "$@"
-fi
+docker run -i --rm --net=host -v $(pwd):/cfssl lindeboomio/cfssl cfssl "$@"
